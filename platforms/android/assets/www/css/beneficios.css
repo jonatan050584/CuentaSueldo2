@@ -1,0 +1,36 @@
+.beneficios{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+	display: none;
+}
+.beneficios .lista{
+	height: 100%;
+}
+.beneficios .item{
+	background: url("../img/b1.jpg") no-repeat center top;
+	height: 100%;
+	float: left;
+	background-size: 100% auto;
+}
+.beneficios .nav{
+	position: fixed;
+	width: 100%;
+	bottom: 10px;
+}
+.beneficios .nav .dots{
+	display: table;
+	margin: auto;
+}
+.beneficios .nav .dot{
+	width: 8px;
+	height: 8px;
+	border-radius: 5px;
+	background: #c3c3c3;
+	float: left;
+	margin: 0 2px;
+}
+.beneficios .nav .dot.ac{
+	background: #00853e;
+}

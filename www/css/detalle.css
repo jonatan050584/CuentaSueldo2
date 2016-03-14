@@ -1,0 +1,151 @@
+.detalle{
+	position: relative;
+}
+.detalle .imagen{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.detalle .info{
+	width: calc(100% - 50px);
+	padding: 0px 25px 25px 25px;
+	
+	position: absolute;
+	margin-top: -30px;
+	z-index: 3;
+}
+.detalle .info .categoria{
+	color: #757575;
+	font-family: 'pf_beausans_proregular';
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 5px;
+}
+.detalle .info .titulo{
+	color: #007934;
+	font-family: 'pf_beausans_probold';
+	font-size: 50px;
+	letter-spacing: -2px;
+	line-height: 50px;
+}
+.detalle .info .negocio{
+	color: #555759;
+	font-size: 27px;
+	font-family: 'pf_beausans_probold';
+	letter-spacing: -1px;
+}
+.detalle .info .descripcion{
+	color:#757575;
+	font-size: 17px;
+	font-family: 'pf_beausans_proregular';
+}
+.detalle .botones{
+	padding-top: 43px;
+	height: 70px;
+	position: relative;
+}
+.detalle .botones .btn{
+	background: no-repeat center top;
+	background-size: 40px 40px;
+	width: 80px;
+	height: 70px;
+	position: absolute;
+	z-index: 50;
+}
+
+.detalle .botones .btn .txt{
+	font-size: 11px;
+	color: #555759;
+	font-family: 'pf_beausans_probold';
+	padding-top: 45px;
+	text-align: center;
+}
+.detalle .botones .btn.over{
+	opacity: 0.6;
+}
+.detalle .botones .btn.legal{
+	background-image: url("../img/icono-restricciones.jpg");
+}
+.detalle .botones .btn.codigo{
+	background-image: url("../img/icono-barras.jpg");
+	left: calc(50% - 40px);
+	display: none;
+}
+.detalle .botones .btn.mapa{
+	right: 0px;
+	background-image: url("../img/icono-aqui.jpg");
+}
+.detalle .popup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 100;
+	top: 0px;
+}
+.detalle .popup .cuadro{
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	background: #fff;
+	position: absolute;
+	z-index: 150;
+	border-radius: 7px;
+	left: 20px;
+	top: 20px;
+}
+.detalle .popup .cerrar{
+	width: 30px;
+	height: 30px;
+	right: 8px;
+	top: 8px;
+	z-index: 200;
+	position: absolute;
+	background: url("../img/cerrar.png");
+	background-size: 100% 100%;
+}
+
+.detalle .popup .cerrar.over{
+	opacity: 0.6;
+}
+.detalle .popup .cont{
+	padding: 40px 24px;
+	position: relative;
+	height: calc(100% - 200px);
+}
+.detalle .popup .titulo{
+	font-size: 16px;
+	color: #555759;
+	font-family: 'pf_beausans_probold';
+	padding-bottom: 10px;
+}
+.detalle .popup .txt{
+	color: #a0a1a2;
+	font-family: 'pf_beausans_proregular';
+	font-size: 14px;
+	line-height: 18px;
+}
+.detalle .popup .area{
+	height: calc(100%);
+	position: absolute;
+	width: calc(100% - 48px); 
+	overflow: auto;
+}
+.detalle .restricciones{
+	display: none;
+}
+.detalle .codigobarras{
+	display: none;
+}
+.detalle .popup.codigobarras .cuadro{
+	width: 280px;
+	height: 280px;
+	background: #fff;
+	position: fixed;
+	border-radius: 7px;
+	left: calc(50% - 140px);
+	top: calc(50% - 140px);
+}
+.detalle .codigobarras .area{
+	background: no-repeat center center;
+	background-size: 200px auto;
+}

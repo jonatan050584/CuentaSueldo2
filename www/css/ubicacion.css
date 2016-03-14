@@ -1,0 +1,56 @@
+.ubicacion{
+	height: 100%;
+	width: 100%;
+	background: #eee;
+}
+#map_canvas2{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.ubicacion .info{
+	position: fixed;
+	bottom: 0px;
+	height: 97px;
+	background: #fff;
+	width: 100%;
+	z-index: 100;
+	display: none;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.ubicacion .info .thumb{
+	width: 98px;
+	height: 97px;
+	float: left;
+	background: #ccc;
+}
+.ubicacion .info .des{
+	float: left;
+	width: calc(100% - 98px);
+	height: 97px;
+	/*padding: 10px 25px;
+	padding-left: 120px;*/
+}
+.ubicacion .info .des .cat{
+	font-family: 'pf_beausans_probold';
+	font-size: 9px;
+	color: #555759;
+	padding-top: 10px;
+	padding-left: 25px;
+	text-transform: uppercase;
+}
+.ubicacion .info .des .nombre{
+	color: #007934;
+	font-family: 'pf_beausans_probold';
+	font-size: 17px;
+	padding-left: 25px;
+}
+.ubicacion .info .des .dir{
+	color: #000;
+	font-family: 'pf_beausans_proregular';
+	font-size: 11px;
+	padding-left: 25px;
+}

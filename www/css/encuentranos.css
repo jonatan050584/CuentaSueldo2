@@ -1,0 +1,49 @@
+.encuentranos{
+	height: 100%;
+
+	width: 100%;
+}
+.encuentranos .table{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.encuentranos .cell{
+	display: table-cell;
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;	
+}
+.encuentranos .cont{
+	width: 226px;
+	margin: auto;
+	text-align: center;
+	color: #393939;
+	font-family: 'pf_beausans_proregular';
+}
+.encuentranos .ico{
+	display: block;
+	margin: auto;
+}
+.encuentranos .t1{
+	font-size: 15px;
+	line-height: 18px;
+	padding-top:10px;
+	padding-bottom: 20px;
+	
+}
+.encuentranos .bt{
+	height: 45px;
+	line-height: 50px;
+	font-size: 18px;
+}
+.encuentranos .t2{
+	font-size: 15px;
+	line-height: 18px;
+	padding-top:54px;
+	padding-bottom: 17px;
+}
+.encuentranos .t3{
+	font-size: 12px;
+	padding-top: 25px;
+}

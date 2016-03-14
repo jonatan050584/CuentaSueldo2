@@ -1,0 +1,108 @@
+.canales{
+	height: 100%;
+	width: 100%;
+	background: #eee;
+}
+#map_canvas3{
+	width: 100%;
+	height: 100%;
+}
+
+
+.canales .leyenda {
+    background: #fff;
+    /* padding: 5px 14px; */
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    /* height: 34px; */
+    box-shadow: 0px 0px 10px #ccc;
+	
+}
+.canales .leyenda .item {
+    width: calc(100% / 3);
+    height: 34px;
+    float: left;
+    background: no-repeat 14px center;
+    background-size: 18px 18px;
+    display: table;
+}
+.canales .leyenda .item.des{
+	opacity: 0.4;
+}
+.canales .leyenda .item .txt {
+    /* background: #eee; */
+    font-family: 'pf_beausans_prolight';
+    font-size: 11px;
+    color: #57595b;
+    padding-left: 40px;
+    display: table-cell;
+    height: 34px;
+    vertical-align: middle;
+
+}
+.canales .info{
+	position: fixed;
+	bottom: 0px;
+	height: 97px;
+	background: none;
+	width: 100%;
+	z-index: 4;
+	display: none;
+}
+.canales .info .n1{
+	background: #fff;
+	width: calc(100% - 78px);
+	height: 97px;
+	border-top-right-radius: 50px;
+	box-shadow: 0px 0px 10px #ccc;
+	float: left;
+}
+.canales .info .n2{
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin-left: -60px;
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	box-shadow: 0px 0px 10px #ccc;
+	margin-top: 20px;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: 40px 40px;
+}
+.canales .info .n3{
+	position: absolute;
+	width: calc(100% - 70px);
+	height: 66px;
+	background: #fff;
+	bottom: 0px;
+}
+.canales .info .cuadro{
+	position: absolute;
+	z-index: 7;
+	padding-left: 25px;
+	padding-top: 10px;
+	width: calc(100% - 120px);
+}
+.canales .info .tipo{
+	font-family: 'pf_beausans_probold';
+	font-size: 9px;
+	color: #555759;
+	text-transform: uppercase;
+	line-height: 15px;
+}
+.canales .info .nombre{
+	color: #007934;
+	font-family: 'pf_beausans_probold';
+	font-size: 15px;
+	line-height: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.canales .info .dir{
+	color: #000;
+	font-family: 'pf_beausans_proregular';
+	font-size: 11px;
+}
