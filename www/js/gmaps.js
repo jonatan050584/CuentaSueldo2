@@ -94,7 +94,7 @@ var Gmaps = function(){
 
   
   this.onMyPosition = function(position){
-    alert("position");
+    
     this.currentpos = position.coords;
 
 

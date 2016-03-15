@@ -8,26 +8,56 @@
         Picnic Comunicación Creativa S.A.C.
     </author>
     <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+
+    <preference name="fullscreen" value="false" />
+ 
+    
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
     <preference name="stay-in-webview" value="false" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="fullscreen" value="false" />
-    <preference name="Orientation" value="portrait" />
-    <preference name="BackgroundColor" value="0xffffffff"/>
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="SplashScreenDelay" value="3000" />
-    <preference name="FadeSplashScreenDuration" value="300"/>
-    <preference name="SplashMaintainAspectRatio" value="true" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="com.adobe.plugins.gaplugin" />
-    <gap:plugin name="org.apache.cordova.geolocation" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="StatusBarOverlaysWebView" value="false" /> 
+    
     <gap:plugin name="org.apache.cordova.dialogs" />
+    
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+   
+    <gap:plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
+    <gap:plugin name="com.adobe.plugins.gaplugin" />
+    <icon src="icon.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+
+    <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+    <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+    <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
+    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+    <gap:splash gap:platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+
+    
     <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -41,18 +71,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    
 
-    <icon src="icon.png" />
-
-    <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
-    <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
-    <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
-    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
-
-    <gap:splash gap:platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
-    <gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
-    <gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
-
-
-     <icon src="icon.png" />
+    
 </widget>
