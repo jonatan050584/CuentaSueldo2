@@ -8,7 +8,13 @@
         Picnic Comunicación Creativa S.A.C.
     </author>
     <content src="index.html" />
-
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="fullscreen" value="false" />
     <preference name="Orientation" value="portrait" />
     <preference name="BackgroundColor" value="0xffffffff"/>
     <preference name="show-splash-screen-spinner" value="true" />
@@ -53,4 +59,18 @@
         <splash density="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
         <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
     </platform>
+
+    <platform name="ios">
+       
+        <icon src="res/icon/ios/icon-57.png" width="57" height="57" />
+        <icon src="res/icon/ios/icon-72.png" width="72" height="72" />
+        <icon src="res/icon/ios/icon-57-2x.png" width="114" height="114" />
+        <icon src="res/icon/ios/icon-72-2x.png" width="144" height="144" />
+        
+        <splash width="320" height="480" src="res/screen/ios/screen-iphone-portrait.png" />
+        <splash width="640" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" />
+        <splash width="640" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" />
+    </platform>
+
+     <icon src="icon.png" />
 </widget>

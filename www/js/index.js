@@ -1,4 +1,4 @@
-var production = false;
+var production = true;
 var pathapi;
 var login;
 var user;
@@ -11,8 +11,8 @@ if(production){
     pathapi = 'http://52.34.151.159/RESTAPI/';
     //pathapi = "http://192.168.0.12/bancofalabella/RESTAPI/";
 }else{
-    pathapi = 'http://52.34.151.159/RESTAPI/';
-    //pathapi = "http://192.168.0.12/bancofalabella/RESTAPI/";
+    //pathapi = 'http://52.34.151.159/RESTAPI/';
+    pathapi = "http://192.168.0.10/bancofalabella/RESTAPI/";
 }
 
 var apiurl = pathapi+"api.php";
