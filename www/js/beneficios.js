@@ -7,6 +7,9 @@ var Beneficios = function(){
 
 	this.dom = $(".seccion.beneficios");
 
+	$(".seccion.beneficios .lista").empty();
+	$(".seccion.beneficios .nav .dots").empty();
+
 	this.mostrar = function(){
 
 		if(this.total==0){

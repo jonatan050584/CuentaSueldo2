@@ -99,6 +99,8 @@ var Login = function(){
 		$("#login").show();
 		 $("#login input[name=dni]").val("");
 		 beneficios.total=0;
+		 beneficios.page=1;
+		 beneficios = new Beneficios();
 	}
 
 	
