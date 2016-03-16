@@ -18,6 +18,7 @@ var Beneficios = function(){
 
 	this.cargar = function(){
 		$(".seccion.beneficios .lista").empty();
+		$(".seccion.beneficios .nav .dots").empty();
 		$.ajax({
 			url:apiurl,
 			data:{
