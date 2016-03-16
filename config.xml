@@ -2,7 +2,7 @@
 <widget id="SRB.FalabellaCuentaSueldo1" version="2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
    <name>Cuenta Sueldo</name>
     <description>
-        Con Cuenta Sueldo de Banco Falabella puedes recibir tu sueldo sin costo de mantenimiento y múltiples beneficios los 365 días del año. 2
+        Con Cuenta Sueldo de Banco Falabella puedes recibir tu sueldo sin costo de mantenimiento y múltiples beneficios los 365 días del año.
     </description>
     <author email="bco.falabellaperu@gmail.com" href="https://www.bancofalabella.pe">
         BANCO FALABELLA PERU S.A.
@@ -16,11 +16,11 @@
     <preference name="prerendered-icon" value="true" />
     <preference name="stay-in-webview" value="false" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
+    <preference name="detect-data-types" value="false" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
+    <preference name="disable-cursor" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
     <preference name="StatusBarOverlaysWebView" value="false" /> 

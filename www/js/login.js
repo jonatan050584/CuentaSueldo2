@@ -98,6 +98,7 @@ var Login = function(){
 	this.reiniciar = function(){
 		$("#login").show();
 		 $("#login input[name=dni]").val("");
+		 beneficios.total=0;
 	}
 
 	
