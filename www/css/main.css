@@ -162,7 +162,6 @@ html{
 	display: none;
 	height: calc(100% - 58px);
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
 	width: 100%;
 }
 .contenido .seccion{
