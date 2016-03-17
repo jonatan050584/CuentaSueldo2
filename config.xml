@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="SRB.FalabellaCuentaSueldo1" version="2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="SRB.FalabellaCuentaSueldo1" version="2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
    <name>Cuenta Sueldo</name>
     <description>
         Con Cuenta Sueldo de Banco Falabella puedes recibir tu sueldo sin costo de mantenimiento y múltiples beneficios los 365 días del año.
