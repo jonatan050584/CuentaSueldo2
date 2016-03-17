@@ -101,6 +101,9 @@ var Login = function(){
 		 beneficios.total=0;
 		 beneficios.page=1;
 		 beneficios = new Beneficios();
+		 $(".seccion.beneficios .lista").empty();
+		 $(".seccion.beneficios .nav .dots").empty();
+		 $(".seccion.beneficios .lista").unbind();
 	}
 
 	
