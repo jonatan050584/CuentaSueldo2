@@ -34,7 +34,7 @@ var app = {
     onDeviceReady: function() {
         console.log(device);
 
-        var push = PushNotification.init({
+        /*var push = PushNotification.init({
             android: {
                 senderID: "564039352699"
             },
@@ -48,7 +48,7 @@ var app = {
 
         push.on('registration', function(data) {
             console.log(data);
-        });
+        });*/
         
         login = new Login();
         w = $(window).innerWidth();
