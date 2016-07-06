@@ -112,6 +112,6 @@ var Login = function(){
 	}else{
 		this.validar(window.localStorage.getItem("doc"),function(){
 			$("#login").show();
-		})
+		});
 	}
 }

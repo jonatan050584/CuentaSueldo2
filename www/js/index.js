@@ -8,11 +8,12 @@ var w; //ancho de pantalla
 
 if(production){
     //pathapi = "http://picnic.pe/clientes/bancofalabella/RESTAPI/";
-    pathapi = 'http://52.34.151.159/RESTAPI/';
-    //pathapi = "http://192.168.0.12/bancofalabella/RESTAPI/";
+    //pathapi = 'http://52.34.151.159/RESTAPI/';
+    pathapi = "http://192.168.0.14/bancofalabella/CuentaSueldo/RESTAPI/";
 }else{
     //pathapi = 'http://52.34.151.159/RESTAPI/';
-    pathapi = "http://192.168.0.10/bancofalabella/RESTAPI/";
+    //pathapi = "http://192.168.0.14/bancofalabella/CuentaSueldo/RESTAPI/";
+    pathapi = "http://localhost/bancofalabella/CuentaSueldo/RESTAPI/";
 }
 
 var apiurl = pathapi+"api.php";
@@ -31,6 +32,23 @@ var app = {
     
 
     onDeviceReady: function() {
+        console.log(device);
+
+        var push = PushNotification.init({
+            android: {
+                senderID: "564039352699"
+            },
+            ios: {
+                alert: "true",
+                badge: "true",
+                sound: "true"
+            },
+            windows: {}
+        });
+
+        push.on('registration', function(data) {
+            console.log(data);
+        });
         
         login = new Login();
         w = $(window).innerWidth();
