@@ -38,10 +38,8 @@
     <plugin name="nl.x-services.plugins.socialsharing" />
     <plugin name="cordova-plugin-google-analytics" />
 
-    <preference name="android-build-tool" value="gradle" />
-    <plugin name="phonegap-plugin-push" spec="1.5.3" source="npm">
-        <param name="SENDER_ID" value="564039352699" />
-    </plugin>
+   
+   
 
     <icon src="icon.png" />
     <icon platform="android" qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
