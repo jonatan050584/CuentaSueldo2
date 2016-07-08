@@ -6,6 +6,10 @@ var seccion = "";
 
 var w; //ancho de pantalla
 
+var registrationId;
+var deviceId;
+var dispositivo = "Android";
+
 if(production){
     //pathapi = "http://picnic.pe/clientes/bancofalabella/RESTAPI/";
     //pathapi = 'http://52.34.151.159/RESTAPI/';
@@ -32,23 +36,9 @@ var app = {
     
 
     onDeviceReady: function() {
+        console.log("----device");
         console.log(device);
-
-        /*var push = PushNotification.init({
-            android: {
-                senderID: "564039352699"
-            },
-            ios: {
-                alert: "true",
-                badge: "true",
-                sound: "true"
-            },
-            windows: {}
-        });
-
-        push.on('registration', function(data) {
-            console.log(data);
-        });*/
+        
         
         login = new Login();
         w = $(window).innerWidth();
