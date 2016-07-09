@@ -8,7 +8,8 @@ var w; //ancho de pantalla
 
 var registrationId;
 var deviceId;
-var dispositivo = "Android";
+var dispositivo = "iOS";
+var version = "2.2";
 
 if(production){
     //pathapi = "http://picnic.pe/clientes/bancofalabella/RESTAPI/";

@@ -20,22 +20,24 @@ var User = function(info){
     });
 
     push.on('registration', function(data) {
-        
-        /*$.ajax{
-			url:apiurl,
-			data:{
-				'ac':'registrarDispositivo',
-				'doc':this.dni,
-				'registrationId':data.registrationId
-			},
-		}*/
-
-		console.log(data);
-    
-
+     
+        $.ajax({
+            url:apiurl,
+            data:{
+                ac:'registrardispositivo',
+                dispositivo:dispositivo,
+                version:version,
+                dni:info.dni,
+                registrationId:data.registrationId,
+                deviceId:device.uuid
+            },
+            dataType:'json',
+            success: function(res){
+                console.log(res);
+            }
+        });
 
     });
-
 	
 
 }

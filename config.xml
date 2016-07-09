@@ -1,69 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="SRB.FalabellaCuentaSueldo1" version="2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-   <name>Cuenta Sueldo</name>
-    <description>
-        Con Cuenta Sueldo de Banco Falabella puedes recibir tu sueldo sin costo de mantenimiento y múltiples beneficios los 365 días del año.
-    </description>
-    <author email="bco.falabellaperu@gmail.com" href="https://www.bancofalabella.pe">
-        BANCO FALABELLA PERU S.A.
+<widget id="SRB.FalabellaCuentaSueldo1" version="2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Cuenta Sueldo Banco Falabella</name>
+    <description></description>
+       
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Agencia Picnic
     </author>
     <content src="index.html" />
-    <preference name="permissions" value="none" />
+
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="handset" />
     <preference name="fullscreen" value="false" />
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="webviewbounce" value="false" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    
-    <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
-    <preference name="android-installLocation" value="auto" />
-    <preference name="StatusBarOverlaysWebView" value="false" /> 
-    
-    <plugin name="cordova-plugin-device" />
-    
-    <plugin name="cordova-plugin-dialogs" />
-   
-    <plugin name="org.apache.cordova.geolocation" />
-   
-    <plugin name="org.apache.cordova.splashscreen" spec="0.2.7" source="pgb" />
-    
-    <plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
-    <plugin name="nl.x-services.plugins.socialsharing" />
-    <plugin name="cordova-plugin-google-analytics" />
-
-    <preference name="android-build-tool" value="gradle" />
-   
-
-    <icon src="icon.png" />
-    <icon platform="android" qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
-    <icon platform="android" qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
-    <icon platform="android" qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
-    <icon platform="android" qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
-
-    <icon platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
-    <icon platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
-    <icon platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
-    <icon platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
-
-    <splash platform="android" qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
-    <splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
-    <splash platform="android" qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
-    <splash platform="android" qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
-    <splash platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
-    <splash platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
-    <splash platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
-    <splash platform="ios" height="1334" src="res/screen/ios/screen-iphone-portrait-667h-2x.png" width="750" />
-    <splash platform="ios" height="2208" src="res/screen/ios/screen-iphone-portrait-736h-3x.png" width="1242" />
-    
-    
-     <access origin="*" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="FadeSplashScreenDuration" value="300"/>
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -74,11 +30,27 @@
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
-        <preference name="orientation" value="porttrait" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-   
+    <plugin name="phonegap-plugin-push" spec="1.6.0">
+        <variable name="SENDER_ID" value="564039352699" />
+    </plugin>
+    <plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-geolocation" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-x-socialsharing" source="npm"  />
 
+    <icon src="icon.png" />
     
+
+    <icon platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+    <icon platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+    <icon platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
+    <icon platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+    <splash platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
+    <splash platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
+    <splash platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+    <splash platform="ios" height="1334" src="res/screen/ios/screen-iphone-portrait-667h-2x.png" width="750" />
+    <splash platform="ios" height="2208" src="res/screen/ios/screen-iphone-portrait-736h-3x.png" width="1242" />
 </widget>
